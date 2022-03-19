@@ -26,7 +26,7 @@ body {
 
 .player__range-bar {
   position: relative;
-  width: 885px;
+  width: 80%;
   height: 2px;
   background-color: #fff;
 }
@@ -74,9 +74,10 @@ ul {
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/header-bg.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .header-wrapper {
@@ -184,16 +185,19 @@ ul {
 .main .newsline .section-1 {
   background-image: url("../images/section-1.png");
   background-size: cover;
+  background-position: center;
 }
 
 .main .newsline .section-2 {
   background-image: url("../images/section-2.png");
   background-size: cover;
+  background-position: center;
 }
 
 .main .newsline .section-3 {
   background-image: url("../images/section-3.png");
   background-size: cover;
+  background-position: center;
 }
 
 .main .newsline .section-text {
@@ -567,8 +571,8 @@ ul {
 
 .main .events .events-wrapper {
   width: 1110px;
-  overflow: hidden;
   height: 475px;
+  overflow: hidden;
 }
 
 .main .events .right-arrow,
@@ -607,16 +611,15 @@ ul {
 }
 
 .main .events .event-blocks {
+  width: 1000%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  display: inline-block;
 }
 
 .main .events .events-block {
+  margin-right: 30px;
+  float: left;
   position: relative;
-  width: 350px;
   height: 475px;
   background: #2F2B2B;
   border-radius: 30px 0px;
@@ -676,6 +679,10 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+}
+
+.main .events .events-block .tickets-button:hover {
+  opacity: 0.5;
 }
 
 .footer {
@@ -765,14 +772,245 @@ ul {
 
 @media (max-width: 1300px) {
   .header-wrapper {
-    width: 800px;
+    width: 900px;
   }
 
   .header-wrapper .top-navigation {
     padding-left: 0;
   }
 
+  .header-wrapper .nav ul {
+    gap: 20px;
+  }
+
   .header-wrapper .header-main-content {
-    padding-top: 100px;
+    padding-top: 200px;
+  }
+
+  .main .main-content {
+    width: 900px;
+  }
+
+  .main .newsline__section {
+    width: 270px;
+  }
+
+  .main .newsline .section-text {
+    font-size: 14px;
+    height: 120px;
+  }
+
+  .main .about-us .about-us-right-part {
+    padding-left: 50px;
+  }
+
+  .main .about-us .about-us-right-part .post-1 {
+    width: 300px;
+    height: 350px;
+  }
+
+  .main .about-us .about-us-right-part .post-2 {
+    width: 300px;
+    height: 350px;
+  }
+
+  .main .news {
+    padding: 0;
+  }
+
+  .main .news .news-content {
+    padding: 50px 350px 50px 80px;
+  }
+
+  .main .news .news-art {
+    height: 100%;
+    right: 0;
+  }
+
+  .main .tracks .tracks-art {
+    width: 410px;
+    height: 410px;
+  }
+
+  .main .tracks .tracks-art::after {
+    width: 370px;
+    height: 370px;
+  }
+
+  .main .tracks .tracks-art-img {
+    width: 336px;
+    height: 336px;
+  }
+
+  .main .tracks .tracks-main {
+    width: 440px;
+  }
+
+  .main .tracks .tracks-main .tracks-main-header h1 {
+    font-size: 38px;
+  }
+
+  .main .tracks .player__play-button {
+    border: 10px solid transparent;
+    border-left: 13px solid #fff;
+  }
+
+  .main .tracks .player__timer {
+    font-size: 14px;
+  }
+
+  .main .tracks .player__range-bar {
+    width: 60%;
+  }
+
+  .main .tracks .tracklist li {
+    font-size: 14px;
+  }
+
+  .main .tracks .tracklist li span {
+    font-size: 14px;
+  }
+
+  .main .tracks .traks-main-footer span {
+    font-size: 16px;
+  }
+
+  .main .events .events-wrapper {
+    width: 900px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .player__play-button {
+    border: 10px solid transparent;
+    border-left: 15px solid #fff;
+  }
+
+  .player__range-bar {
+    width: 70%;
+  }
+
+  .player__timer {
+    font-size: 14px;
+  }
+
+  .header-wrapper {
+    width: 90%;
+  }
+
+  .header-wrapper .top-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .header-wrapper .header-main-content h1 {
+    font-size: 28px;
+  }
+
+  .header-wrapper .header-main-content .sound-name {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .main .main-content {
+    width: 90%;
+  }
+
+  .main .newsline__section {
+    width: 30%;
+    height: 250px;
+  }
+
+  .main .newsline .section-text {
+    font-size: 10px;
+    height: 100px;
+  }
+
+  .main .about-us .about-us-left-part {
+    width: 100%;
+  }
+
+  .main .about-us .about-us-right-part {
+    display: none;
+  }
+
+  .main .news .news-content {
+    padding: 50px 80px 50px 80px;
+  }
+
+  .main .news .news-art {
+    opacity: 0.3;
+  }
+
+  .main .tracks .tracks-art {
+    width: 350px;
+    height: 350px;
+  }
+
+  .main .tracks .tracks-art::after {
+    width: 310px;
+    height: 310px;
+  }
+
+  .main .tracks .tracks-art-img {
+    width: 276px;
+    height: 276px;
+  }
+
+  .main .tracks .tracks-main {
+    width: 380px;
+  }
+
+  .main .events .events-wrapper {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  .main .events .right-arrow,
+  .main .events .left-arrow {
+    top: 185px;
+  }
+
+  .main .events .right-arrow {
+    right: -20px;
+  }
+
+  .main .events .left-arrow {
+    left: -20px;
+  }
+
+  .main .events .events-block {
+    height: 425px;
+  }
+
+  .main .events .events-block .event-img {
+    height: 180px;
+  }
+
+  .main .events .events-block .events-block-text {
+    padding: 10px 15px;
+  }
+
+  .main .events .events-block .events-block-text h2 {
+    font-size: 16px;
+  }
+
+  .main .events .events-block .events-block-text p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .main .events .events-block .events-block-text span {
+    font-size: 12px;
+  }
+
+  .main .events .events-block .tickets-button {
+    width: 100%;
   }
 }
