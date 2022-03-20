@@ -6,11 +6,11 @@ console.log(eventsBlock[0]);
 let left = 0;
 
 leftArrow.onclick = () => {
-  left -= eventsBlock[0].offsetWidth + 30;
+  left += eventsBlock[0].offsetWidth + 30;
   eventBlocks.style.left = `${left}px`;
 };
 
 rightArrow.onclick = () => {
-  left += eventsBlock[0].offsetWidth + 30;
+  left -= eventsBlock[0].offsetWidth + 30;
   eventBlocks.style.left = `${left}px`;
 }
