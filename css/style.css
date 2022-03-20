@@ -31,18 +31,16 @@ body {
   background-color: #fff;
 }
 
-.player__range-bar::after {
-  content: "";
+.player__range-bar-color {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
+  width: 0px;
   height: 2px;
   background-color: #7A66CC;
 }
 
-.player__range-bar::before {
-  content: "";
+.player__range-bar-vertical {
   position: absolute;
   top: -9px;
   width: 2px;
@@ -56,6 +54,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.pause {
+  border: 0 !important;
+  border-left: 0 !important;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+}
+
+.check {
+  color: #7A66CC;
 }
 
 * {

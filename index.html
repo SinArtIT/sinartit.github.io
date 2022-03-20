@@ -50,10 +50,13 @@
       <h1>New Single</h1>
       <div class="sound-name">War For Love</div>
       <div class="player">
-        <audio src="./audio/03-Poets of the Fall--Late goodbye (Max Payne 2 end credits).mp3"
-          class="header-audio"></audio>
-        <div class="player__play-button" id="header-button-play"></div>
-        <div class="player__range-bar"></div>
+        <audio src="./audio/Poets of the Fall--Late goodbye (Max Payne 2 end credits).mp3" class="header-audio"></audio>
+        <div class="player__play-button" data-parent="header"></div>
+        <div class="player__range-bar">
+          <div class="player__range-bar-color"></div>
+          <div class="player__range-bar-vertical"></div>
+        </div>
+
         <div class="player__timer">
           <div class="current-time">00:22</div>
           <span>-</span>
@@ -212,8 +215,12 @@
           <h1>Last tracks</h1>
         </header>
         <div class="player">
-          <div class="player__play-button"></div>
-          <div class="player__range-bar"></div>
+          <audio src="./audio/Poets of the Fall--Lift (album version).mp3" class="main-audio"></audio>
+          <div class="player__play-button" data-parent="main"></div>
+          <div class="player__range-bar">
+            <div class="player__range-bar-color"></div>
+            <div class="player__range-bar-vertical"></div>
+          </div>
           <div class="player__timer">
             <div class="current-time">00:22</div>
             <span>-</span>
@@ -221,13 +228,21 @@
           </div>
         </div>
         <div class="tracklist">
-          <ul>
+          <!-- <ul>
             <li><span>01</span>3LAU, Bright Lights — How You Love Me</li>
             <li><span>02</span>Bright Lights, Kaleena Zanders, Kandy — War For Love</li>
             <li><span>03</span>Pink Is Punk, Benny Benassi, Bright Lights — Ghost</li>
             <li><span>04</span>Hardwell, Dyro, Bright Lights — Never Say Goodbye</li>
             <li><span>05</span>Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now</li>
             <li><span>06</span>Zedd, Bright Lights — Follow You Down</li>
+          </ul> -->
+          <ul>
+            <li class="check"><span>01</span>Poets of the Fall--Lift (album version)</li>
+            <li><span>02</span>Poets of the Fall--Overboard</li>
+            <li><span>03</span>Poets of the Fall--Late goodbye (Max Payne 2 end credits)</li>
+            <li><span>04</span>Poets of the Fall--Don't Mess With Me</li>
+            <li><span>05</span>Poets of the Fall--3 AM</li>
+            <li><span>06</span>Poets of the Fall--Stay</li>
           </ul>
         </div>
         <footer class="traks-main-footer">
